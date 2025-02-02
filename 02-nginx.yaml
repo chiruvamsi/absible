@@ -5,11 +5,11 @@
     ansible.builtin.package:
     name : nginx
     state : present
-  - name: enable nginx
+- name: enable nginx
     ansible.builtin.service:
     name : nginx
     state : enable
-  - name: install nginx
+- name: install nginx
     ansible.builtin.service::
     name : nginx
     state : started
