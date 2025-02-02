@@ -6,11 +6,11 @@
     ansible.builtin.package:
       name : nginx
       state : present
-  - name: enable nginx
+  - name: Start nginx
     ansible.builtin.service:
       name : nginx
       state : started
-  - name: start nginx
+  - name: enble nginx
     ansible.builtin.service:
       name : nginx
-      state : enable
+      state : got: enable
